@@ -1,0 +1,431 @@
+
+
+/*
+=====================
+CONFIGURAÇÕES BÁSICAS
+=====================
+*/
+
+
+body {
+    font-family: "Fira Sans" , Arial, sans-serif; /* define a fonte princial para o site */
+    margin: 0px; /* remover qualquer margin padrão aplicada pelo navegador */
+    color:  #141414; /* define a cor do site para um tom escuro */
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%; /* garante que a img nunca ultrapasse o container (overflow) */
+    height: auto; /* mantém a proporção original da img */
+}
+
+li {
+    list-style: none;
+}
+
+
+/*
+==================
+CABEÇALHO (HEADER)
+==================
+*/
+
+.header-all {
+    background-color: #000000;
+    color: white;
+}
+
+.header {
+    max-width: 1200px; /* define largura máxima para evitar que o conteúdo fique muito largo em telas grandes */
+    padding: 40px 20px; /* espaçamento interno para cima/baixo direita/esquerda */
+    margin: 0 auto; /* centralizar o cabeçalho na horizontal */
+    display: flex; /* organiza os elemntos lado a lado */
+    justify-content: space-between; /* espaço horizontal entre os itens */
+    align-items: center; /* centraliza a linha verticalmente os elemntos */
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap; /* permite que os itens do menu quebrem a linha */
+    gap: 10px; /* espaçamento entre o itens sem precisar usar o space between */
+    justify-content: center; /* garante que os itens sempre fiquem centralizado */
+}
+
+.header-menu a {
+    text-decoration: none; /* remove o sublinhado padrão da linha */
+    padding: 10px 20px;
+    font-size: 20px;
+    color:  white; /* define a cor do site para um tom escuro */
+    display: block; /* garante que o link ocupe toda área do botão */
+}
+
+.header img {
+    width: 60px;
+    margin-top: -19px;
+    border-radius: 50px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+/*
+====================
+SEÇÃO DE INTRODUÇÃO
+====================
+*/
+
+.introducao-all {
+    background-color: white;
+}
+
+.introducao {
+    max-width: 1200px;
+    padding: 100px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* divide o espaço, 1 parte para a img e 2 partes para o texto */
+    gap: 100px;
+    align-items: center;
+}
+
+.introducao h1 {
+    font-size: 72px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.introducao p {
+    font-size: 24px;
+    color: #000000;
+}
+
+.introducao img {
+    width: 340px; /* aumenta aqui */
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.introducao img:hover {
+    transform: scale(1.3); /* 1.2 = 120% do tamanho original */
+}
+
+/*
+=====================
+SEÇÃO DE ICONS
+=====================
+*/
+
+.icons-all {
+    /* background-color: #000000; */
+    padding: 100px;
+    margin-top: -90px;
+}
+
+.img-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;   
+}
+
+.img-icons img {
+    border: 2px solid #000; /* cor e espessura da borda */
+    border-radius: 50%;     /* deixa a borda circular */
+    padding: 15px;          /* espaço interno opcional */
+    background-color: #fff; /* fundo da bolinha, se quiser */
+    width: 100px;            /* ou o tamanho que preferir */
+    height: 100px;
+    object-fit: cover;      /* mantém o ícone bem ajustado */
+}
+
+.img-icons img:hover  {
+    transform: scale(1.2);
+    /* background-color: #000000; */
+}
+
+
+/*
+=====================
+SEÇÃO DE CONHECIMENTOS
+=====================
+*/
+
+.conhecimento-all {
+    background-color: #000000;
+}
+
+.conhecimento {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.conhecimento .subtitulo {
+    color: white;
+}
+
+.conhecimento-texto {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #e0e0e0;
+    max-width: 55ch;
+}
+
+
+/*
+=====================
+SEÇÃO DE VIDEOS
+=====================
+*/
+
+
+.video-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 100px;
+    background-color: white;
+}
+
+
+/*
+=====================
+SEÇÃO DE PROJETOS
+=====================
+*/
+
+
+.projetos-all {
+    background-color: #000000;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.projetos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.projetos .subtitulo {
+    color: white;
+}
+
+.projetos-texto {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+    max-width: 55ch;
+}
+
+
+/*
+=====================
+SEÇÃO DE EXPERIÊNCIA
+=====================
+*/
+
+
+.experiencia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.experiencia .subtitulo {
+    color: #e0e0e0;
+}
+
+.experiencia-texto {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #525252;
+    max-width: 55ch;
+}
+
+.subtitulo {
+    font-size: 144px;
+    text-transform: uppercase;
+    max-width: 4ch; /* O valor em ch refere-se ao caractere. Mantem esse número de ch na linha. */
+    word-break: break-all; /* Utilizado com o valor ch, faz com que seja quebrado o textto quando chegar ao número de ch informado. */
+    line-height: 1; /* Informa o tamanho do espaçamento das linhas. */
+    letter-spacing: 0; /* Informa o tamanho do espaçamento entre as letras. */
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.empresa-ano {
+    text-align: right;
+    color: #525252;
+    font-size: 14px;
+    background-color: rgb(212, 212, 212);
+
+}
+
+.empresa-titulo {
+    font-size: 18px;
+}
+
+
+/*
+=====================
+SEÇÃO DO FOMAÇÃO
+=====================
+*/
+
+
+.formacao {
+    background-color: white;
+    color: #e0e0e0;
+}
+
+.formacao-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.formacao .subtitulo {
+    color: #000000;
+    max-width: 5ch;
+}
+
+.formacao-texto {
+    font-size: 24px;
+    max-width: 40ch;
+    color: #000000;
+    margin-bottom: 60px;
+    padding-left: 40px;
+}
+
+.faculdade-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.faculdade {
+    flex: 1;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faculdade-tipo {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.faculdade-curso {
+    font-size: 18px;
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+.faculdade-instituicao {
+    font-size: 18px;
+    color: #a3a3a3;
+}
+
+
+/*
+=====================
+SEÇÃO DO FOOTER
+=====================
+*/
+
+
+.footer {
+    background: #000000;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.footer-texto {
+    font-size: 24px;
+    color: white;
+}
+
+.footer-contato li {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-contato li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-copy {
+    font-size: 20px;
+    color: #8f8f8f;
+}
+
+.footer-texto a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+
+/*
+=====================
+ROLAGEM SUAVE
+=====================
+*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
